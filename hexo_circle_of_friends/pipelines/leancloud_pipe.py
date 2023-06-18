@@ -100,7 +100,7 @@ class LeancloudPipeline:
     def query_friendslist(self):
         try:
             query = self.Friendslist.query
-            query.select('frindname', 'friendlink', 'firendimg', 'error')
+            query.select('friendname', 'friendlink', 'firendimg', 'error')
             query.limit(1000)
             self.query_friend_list = query.find()
         except:
