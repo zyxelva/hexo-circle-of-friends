@@ -65,9 +65,9 @@ class GetUrl:
         self.handle(avatar, link, name, queue, "fluid")
 
     def get_matery_url(self, response, queue):
-        avatar = response.css('#friends-link .frind-ship img::attr(src)').extract()
-        link = response.css('#friends-link .frind-ship a::attr(href)').extract()
-        name = response.css('#friends-link .frind-ship h1::text').extract()
+        avatar = response.css('#friends-link .friend-ship img::attr(src)').extract()
+        link = response.css('#friends-link .friend-ship a::attr(href)').extract()
+        name = response.css('#friends-link .friend-ship h1::text').extract()
         self.handle(avatar, link, name, queue, "matery")
 
     def get_nexmoe_url(self, response, queue):
