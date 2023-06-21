@@ -4,9 +4,16 @@
         "active_num":15,
         "error_num":8,
         "article_num":38,
-        "last_updated_time":"2023-06-18 15:09:10"
+        "last_updated_time":"2023-06-21 15:42:10"
     },
     "friends":[
+        {
+            "name": "Kezade",
+            "avatar": "https://zyxelva.github.io/medias/avatar.png",
+            "url": "https://zyxelva.github.io",
+            "introduction": "全栈开发，架构师，向往躺平",
+            "title": "访问他的主页"
+        },
         {
             "name":"Sitoi",
             "avatar":"https://sitoi.cn/medias/avatars/avatar.jpg",
