@@ -81,6 +81,7 @@ jobs:
           echo "working-directory: "
           pwd
           ls
+          ls hexo-circle-of-friends/
           #从 movie1.json 中提取 pages 字段的值
           pages=$(jq '.pages' movie1.json)
           
