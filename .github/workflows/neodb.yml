@@ -1,5 +1,5 @@
 # .github/workflows/douban.yml
-name: Sync NeoDB Data
+name: Sync NeoDB-Movie Data
 on:
   schedule:
     - cron: "0 30 0,12 * * ?"
