@@ -27,7 +27,7 @@ jobs:
             echo "jq is already installed."
           fi
           # 把当前目录保存到环境变量中
-          echo "WORK_DIR=$(pwd)/.." >> $GITHUB_ENV
+          echo "WORK_DIR=$(pwd)/../" >> $GITHUB_ENV
 
       # 获取本地现有文件的标记数
       - name: Get Current Count
