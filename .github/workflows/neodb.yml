@@ -80,6 +80,7 @@ jobs:
         run: |
           echo "working-directory: "
           pwd
+          ls
           #从 movie1.json 中提取 pages 字段的值
           pages=$(jq '.pages' movie1.json)
           
