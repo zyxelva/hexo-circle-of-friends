@@ -1,9 +1,6 @@
 # .github/workflows/douban.yml
 name: Sync NeoDB-Movie Data
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: "30 0,12 * * *"
   #  watch:
@@ -21,7 +18,6 @@ jobs:
 
       # 检查是否安装了 JQ
       - name: Check JQ
-        working-directory: ../
         run: |
           if ! command -v jq &> /dev/null; then
             echo "jq is not installed. Installing..."
@@ -35,17 +31,13 @@ jobs:
 
       # 获取本地现有文件的标记数
       - name: Get Current Count
-        working-directory: ../
         run: |
           CURRENT_COUNT() {
             jq '.count' data/neodb/movies.json
           }
           echo "CURRENT_COUNT=$(CURRENT_COUNT)" >> $GITHUB_ENV
-          echo "working-directory: "
-          pwd
 
       - name: Get NeoDB JSON and Count
-        working-directory: ../
         run: |
           curl -X 'GET' \
           'https://neodb.social/api/me/shelf/complete?category=movie&page=1' \
@@ -57,12 +49,9 @@ jobs:
             jq '.count' movie1.json
           }
           echo "REMOTE_COUNT=$(REMOTE_COUNT)" >> $GITHUB_ENV
-          echo "working-directory: "
-          pwd
 
       # 对比本地的标记数和远程标记数，相等就跳过，不相等就下载新数据
       - name: Count Compare
-        working-directory: ../
         run: |
           if [ "${{ env.REMOTE_COUNT }}" = "${{ env.CURRENT_COUNT }}" ]; then
             echo "Variables are equal. Skipping the next steps."
@@ -70,18 +59,11 @@ jobs:
           else
             echo "Variables are not equal. Running the next steps."
           fi
-          echo "working-directory: "
-          pwd
 
       # 下载所有数据
       - name: Get All NeoDB Count
-        working-directory: ../
         if: ${{ env.REMOTE_COUNT != env.CURRENT_COUNT }}
         run: |
-          echo "working-directory: "
-          pwd
-          ls
-          ls hexo-circle-of-friends/
           #从 movie1.json 中提取 pages 字段的值
           pages=$(jq '.pages' movie1.json)
           
@@ -104,14 +86,14 @@ jobs:
           jq -c -s '{data: map(.data[]) | unique | sort_by(.created_time) | reverse, pages: map(.pages)[0], count: map(.count)[0]}' *.json > movies.json
           
           # 更新 NeoDB 数据
-          cp -f movies.json ./data/neodb/
+          echo "当前目录："
+          pwd
+          echo "当前目录文件："
+          ls -a
+          cp -f movies.json ${{ env.WORK_DIR }}/data/neodb/
 
       - name: Download NeoDB Cover
-        working-directory: ../
         run: |
-          echo "working-directory: "
-          pwd
-          ls
           # 检查 movie 目录是否存在，如果不存在则创建
           if [ ! -d "movie" ]; then
             mkdir movie
