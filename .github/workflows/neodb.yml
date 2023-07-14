@@ -64,12 +64,19 @@ jobs:
       - name: Get All NeoDB Count
         if: ${{ env.REMOTE_COUNT != env.CURRENT_COUNT }}
         run: |
+          echo "当前目录："
+          pwd
+          echo "当前目录文件："
+          ls -alh
+          echo "========================"
           #从 movie1.json 中提取 pages 字段的值
           pages=$(jq '.pages' movie1.json)
           
           # 个人使用，新建 WorkDIR ，排除 vercel.json 和 package.json 等
           mkdir neodb
           cd neodb
+          echo "当前目录2："
+          pwd
           
           # 循环下载文件，因为 page 1 已经下载过了，从 2 开始
           for ((i=1; i<=$pages; i++)); do
