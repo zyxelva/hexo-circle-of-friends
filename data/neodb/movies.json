@@ -1,0 +1,541 @@
+{
+  "data": [
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "5Wq9nbenGR8Jt8jXndku7l",
+        "url": "/movie/5Wq9nbenGR8Jt8jXndku7l",
+        "api_url": "/api/movie/5Wq9nbenGR8Jt8jXndku7l",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "爱很美味",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/35711450/"
+          }
+        ],
+        "title": "爱很美味",
+        "brief": "普通女孩刘净（李纯 饰）开了一间理想中的餐厅，但不容乐观的经营现状令她心生动摇；漂亮女孩方欣（张含韵 饰）渴望在职场中证明自己并非“花瓶”，意外的怀孕却一下打乱她的节奏；强势女孩夏梦（王菊 饰）习惯了赢，还没有学会如何接受输……也许生活总有些许麻烦，但姐妹是我们坚定自己、勇敢向前的底气，哪怕永远不是“完美”的那一个，我们也是最完美的姐妹。\n影片延续剧版故事，由原班人马打造。",
+        "cover_image_url": "https://neodb.social/media/item/doubanmovie/2023/04/16/aacd8324-0aa1-4d83-ba8c-46b6718232da.jpg",
+        "rating": 6.8,
+        "rating_count": 32
+      },
+      "created_time": "2023-06-16T12:31:01Z",
+      "comment_text": null,
+      "rating_grade": 6,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "5uyMKTQojkBakMi5k5hVD9",
+        "url": "/movie/5uyMKTQojkBakMi5k5hVD9",
+        "api_url": "/api/movie/5uyMKTQojkBakMi5k5hVD9",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "阿凡达：水之道",
+        "external_resources": [
+          {
+            "url": "https://www.imdb.com/title/tt1630029/"
+          },
+          {
+            "url": "https://www.themoviedb.org/movie/76600"
+          },
+          {
+            "url": "https://movie.douban.com/subject/4811774/"
+          }
+        ],
+        "title": "阿凡达：水之道",
+        "brief": "杰克和奈蒂莉组建了家庭，他们的孩子也逐渐成长，为这个家庭带来了许多欢乐。然而危机未曾消散，为了躲避追杀，萨利一家拼尽全力彼此守护、奋力求生，最终来到潘多拉星球临海的岛礁族寻求庇护。岛礁族首领特诺瓦里与罗娜尔为萨利一家提供了庇护所，这个部族的成员都是天生的潜水好手，也和海洋中的各种生物建立了密切联系。然而追杀者并没有放弃，反而步步接近了萨利一家……",
+        "cover_image_url": "https://neodb.social/media/movie/2022/12/16402f66e2-f667-4580-a5fc-bfe7a0a9b485.jpg",
+        "rating": 6.9,
+        "rating_count": 401
+      },
+      "created_time": "2023-06-16T12:30:31Z",
+      "comment_text": null,
+      "rating_grade": 6,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "1ZO8CA9FpRpOBIhLYGTngI",
+        "url": "/movie/1ZO8CA9FpRpOBIhLYGTngI",
+        "api_url": "/api/movie/1ZO8CA9FpRpOBIhLYGTngI",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "烈火英雄",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/30221757/"
+          }
+        ],
+        "title": "烈火英雄",
+        "brief": "滨海市海港码头发生管道爆炸，整个罐区的原油都顺着A01油罐往外流，化成火海和阵阵爆炸，威胁全市、全省，甚至邻国的安全。慌乱的市民们四处奔逃，一辆辆消防车却逆向冲进火海……",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/16f28969ce-affc-4b28-b4c2-cb53f9f4b203.jpg",
+        "rating": 5.4,
+        "rating_count": 118
+      },
+      "created_time": "2023-06-09T05:36:38Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "2iGrDqWusNlBCq1oFtQHJz",
+        "url": "/movie/2iGrDqWusNlBCq1oFtQHJz",
+        "api_url": "/api/movie/2iGrDqWusNlBCq1oFtQHJz",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "误杀2",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/35068653/"
+          }
+        ],
+        "title": "误杀2",
+        "brief": "林日朗（肖央 饰）与妻子阿玲、儿子小虫一直过着清贫但幸福的生活，直到儿子小虫突发意外急需救治，几经周折，走投无路的林日朗为了救儿子决定放手一搏。他制定了一个惊天计划.....\n本片改编自电影《迫在眉梢》。",
+        "cover_image_url": "https://neodb.social/media/movie/2021/12/10e43537d4-36ef-4a22-93e0-7ab90c758add.jpg",
+        "rating": 5.2,
+        "rating_count": 156
+      },
+      "created_time": "2023-06-09T05:36:36Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "0rzlB5SYjaqlXdqDRuaQHl",
+        "url": "/movie/0rzlB5SYjaqlXdqDRuaQHl",
+        "api_url": "/api/movie/0rzlB5SYjaqlXdqDRuaQHl",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "神探蒲松龄",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/27065898/"
+          }
+        ],
+        "title": "神探蒲松龄",
+        "brief": "隐居深山老林的蒲松龄（成龙 饰）不仅是一名文采飞扬的文学家，更是一个身怀绝技的捉妖高手。在某次珠宝盗窃案中，蒲松龄和金华县菜鸟捕快严飞（林柏宏 饰）结识。在此之后，被衙门提出来的严飞找上山来，死乞白赖要拜蒲松龄为师。适值此时，金华县初县令（潘长江 饰）的独女被女妖聂小倩（钟楚曦 饰）摄走，中途虽有法师宁采臣（阮经天 饰）阻拦，但是小姐却下落不明。得知此讯，蒲松龄带着严飞和一众早已收伏的小妖下山捉妖，结果遭遇小倩的姐姐镜妖（林鹏 饰）阻挠。\n一番混战过后，虽然镜妖被除，但是宁采臣和聂小倩之间仍有一段宿缘未了……",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/173a6ca50b-5c7e-4144-aec1-528e3f65ddb7.jpg",
+        "rating": 3.2,
+        "rating_count": 38
+      },
+      "created_time": "2023-06-09T05:36:35Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "3D0FdCqSzfKyJsBuReRTOD",
+        "url": "/movie/3D0FdCqSzfKyJsBuReRTOD",
+        "api_url": "/api/movie/3D0FdCqSzfKyJsBuReRTOD",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "我的女友是机器人",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/34433857/"
+          }
+        ],
+        "title": "我的女友是机器人",
+        "brief": "方元（包贝尔 饰）虽然年纪轻轻，却已经对生活失去了所有的热情。身为导游的他每天浑浑噩噩的做着自己的本职工作，对游览的风景名胜毫无兴趣和热爱。生活里，方元也是形单影只的一个人，长久的孤独让他早就对亲密关系失去了信心。一次偶然中，方元邂逅了一个神秘的女孩（辛芷蕾 饰），两人度过了开心的一夜，可之后，女孩便销声匿迹，令方元久久无法忘怀。\n一晃眼一年过去，在生日那天，方元意外的得到了一台名为初一的机器人，让他不敢相信的是，初一竟然有着和之前那个女孩一模一样的外貌。在朝夕相处之中，方元渐渐对初一产生了感情。",
+        "cover_image_url": "https://neodb.social/media/movie/2022/04/26d9e523b4-0705-4192-a479-3dd6124db461.jpg",
+        "rating": 2.2,
+        "rating_count": 9
+      },
+      "created_time": "2023-06-09T05:36:33Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "6yMn0F9fbbJqR1wMheBn9t",
+        "url": "/movie/6yMn0F9fbbJqR1wMheBn9t",
+        "api_url": "/api/movie/6yMn0F9fbbJqR1wMheBn9t",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "急先锋",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/27195078/"
+          }
+        ],
+        "title": "急先锋",
+        "brief": "中国商人秦国立在英国惨遭雇佣兵组织“北极狼”绑架，秦的女儿Fareeda（徐若晗 饰）也卷入其中，遭到追杀。千钧一发之际，急先锋国际安保团队成为他们唯一的希望，由总指挥唐焕庭（成龙饰）带领雷震宇（杨洋饰）、张凯旋（艾伦饰）、弥雅（母其弥雅饰）、神雕（朱正廷饰）等组成的急先锋行动小组，上天入地，辗转全球各地施展惊险营救。解救人质的过程中，竟发现“北极狼”背后的犯罪集团还策划了一场惊天密谋……",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/239b5056f4-20c7-4e8e-bc91-754db4c58e67.jpg",
+        "rating": 3.6,
+        "rating_count": 42
+      },
+      "created_time": "2023-06-09T05:36:32Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "6unFRNKqL7LxfSpS0Pd8rT",
+        "url": "/movie/6unFRNKqL7LxfSpS0Pd8rT",
+        "api_url": "/api/movie/6unFRNKqL7LxfSpS0Pd8rT",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "唐人街探案3",
+        "external_resources": [
+          {
+            "url": "https://www.themoviedb.org/movie/602666"
+          },
+          {
+            "url": "https://movie.douban.com/subject/27619748/"
+          }
+        ],
+        "title": "唐人街探案3",
+        "brief": "继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案。“CRIMASTER世界侦探排行榜”中的侦探们闻讯后也齐聚东京，加入挑战，而排名第一Q的现身，让这个大案更加扑朔迷离，一场亚洲最强神探之间的较量即将爆笑展开……",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/16b10d7e9f-4a2a-471e-8e98-8acc0054ddda.jpg",
+        "rating": 4.4,
+        "rating_count": 659
+      },
+      "created_time": "2023-06-09T05:36:31Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "3KIA4XzrVOiM8HPrP1JPM0",
+        "url": "/movie/3KIA4XzrVOiM8HPrP1JPM0",
+        "api_url": "/api/movie/3KIA4XzrVOiM8HPrP1JPM0",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "亿万懦夫",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/27087882/"
+          }
+        ],
+        "title": "亿万懦夫",
+        "brief": "王亿万背负着父亲寄予厚望的名字，却碌碌无为，胆小懦弱，在接到初恋女友陆小圈的请柬后前往泰国，取钱时竟偶遇丢失银行卡的⼩圈。婚礼前夜，两⼈被⿊哥劫匪团伙持枪困在银⾏中，陷⾝于⼀场真假劫匪的⻛波。",
+        "cover_image_url": "https://neodb.social/media/movie/2022/05/018075dbe3-3c5c-4354-9b6c-bbe0ff7b8cf4.jpg",
+        "rating": null,
+        "rating_count": 4
+      },
+      "created_time": "2023-06-09T05:36:30Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "4Uu1jJVyyvwqoXd1Js7g5q",
+        "url": "/movie/4Uu1jJVyyvwqoXd1Js7g5q",
+        "api_url": "/api/movie/4Uu1jJVyyvwqoXd1Js7g5q",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "沐浴之王",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/34894753/"
+          }
+        ],
+        "title": "沐浴之王",
+        "brief": "在一次搓澡服务中，富二代肖翔（彭昱畅 饰）和搓澡工周东海（乔杉 饰）发生矛盾，让周东海面临生活困境。肖翔因跳伞事故被送到医院记忆全失，周东海恰巧撞见，心生一计，骗肖翔是自己的弟弟并骗回周家澡堂当搓澡工，于是一个富二代开始了一段终身难忘的搓澡生涯……",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/1590a89431-220f-42b4-a744-0cded2b14b6c.jpg",
+        "rating": 5.3,
+        "rating_count": 211
+      },
+      "created_time": "2023-06-09T05:36:28Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "0VqGmoeM72QUBQSe3EpgVk",
+        "url": "/movie/0VqGmoeM72QUBQSe3EpgVk",
+        "api_url": "/api/movie/0VqGmoeM72QUBQSe3EpgVk",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "扫黑·决战",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/35164328/"
+          }
+        ],
+        "title": "扫黑·决战",
+        "brief": "该片是国内首部以“扫黑除恶”行动为题材、展现全国扫黑办督办案件的影视化作品，讲述某扫黑专案组组长宋一锐带领组员由一起征地案深入调查，突破层层阻挠，与幕后的黑恶势力展开激烈斗争，最终揭开腐败官员利用公职权力充当犯罪保护伞的虚伪面具，将犯罪分子绳之以法的故事。",
+        "cover_image_url": "https://neodb.social/media/item/doubanmovie/2023/06/05/57ff6d4b-c550-4956-a032-a73d72bd2941.jpg",
+        "rating": 5.2,
+        "rating_count": 103
+      },
+      "created_time": "2023-06-09T05:36:27Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "6ercq3N0tvSgiubWcV1cYY",
+        "url": "/movie/6ercq3N0tvSgiubWcV1cYY",
+        "api_url": "/api/movie/6ercq3N0tvSgiubWcV1cYY",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "来电狂响",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/30377703/"
+          }
+        ],
+        "title": "来电狂响",
+        "brief": "某天，久不谋面的老同学相约聚会。聚会在教师文伯（田雨 饰）及其妻子戴戴（代乐乐 饰）的家中举行。小人物吴小江（乔杉 饰）和老婆李楠（霍思燕 饰）、女强人韩笑（马丽 饰）、不出名的编剧贾迪（佟大为 饰）及其新结交的富家女友娇娇（奚梦瑶 饰）相继到来。身为心理医生的戴戴的一番话，让李楠对老公吴小江看手机时鬼鬼祟祟的行为起了疑。之后在众人的提议下，他们决定玩一个游戏：所有人都把手机放在餐桌中央，期间无论哪部手机接到的微信、短信还是电话都必须当众宣读或接听。\n光鲜靓丽的外表之下，每个人都有着不想被他人知道的秘密。却仅仅以为一部手机，让各自真实的面目大白天下……",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/16a92ed004-c5ca-4ba6-86a5-b5eda7c2ecdc.jpg",
+        "rating": 4.9,
+        "rating_count": 197
+      },
+      "created_time": "2023-06-09T05:36:26Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "5jx2Ag2xImRWK9S6CRz1dL",
+        "url": "/movie/5jx2Ag2xImRWK9S6CRz1dL",
+        "api_url": "/api/movie/5jx2Ag2xImRWK9S6CRz1dL",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "我和我的父辈",
+        "external_resources": [
+          {
+            "url": "https://www.themoviedb.org/movie/869724"
+          },
+          {
+            "url": "https://movie.douban.com/subject/35294995/"
+          }
+        ],
+        "title": "我和我的父辈",
+        "brief": "继2019年《我和我的祖国》、2020年《我和我的家乡》，国庆三部曲之《我和我的父辈》接棒定档2021年国庆。由吴京、章子怡、徐峥、沈腾导演，“中国电影追梦人”再次集结，以革命、建设、改革开放和新时代为历史坐标, 通过“家与国”的视角描写几代父辈的奋斗经历，讲述中国人的血脉相连和精神传承，再现中国人努力拼搏的时代记忆。",
+        "cover_image_url": "https://neodb.social/media/movie/2021/12/065675a826-f075-40bb-9e89-58c88bbf01a5.jpg",
+        "rating": 5.6,
+        "rating_count": 105
+      },
+      "created_time": "2023-06-09T05:36:25Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "0sUDj7NjAvk35kukauq6er",
+        "url": "/movie/0sUDj7NjAvk35kukauq6er",
+        "api_url": "/api/movie/0sUDj7NjAvk35kukauq6er",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "使徒行者2：谍影行动",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/30423193/"
+          },
+          {
+            "url": "https://www.themoviedb.org/movie/589157"
+          }
+        ],
+        "title": "使徒行者2：谍影行动",
+        "brief": "童年兄弟意外失散，30年后因一桩罪案相见，两人已身处不同阵营。随着对罪案调查的深入，一个多年来隐于幕后的恐怖组织渐渐浮出水面。",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/15d38e6504-84a4-4925-87d0-21c122aace57.jpg",
+        "rating": 6,
+        "rating_count": 141
+      },
+      "created_time": "2023-06-09T05:36:20Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "4lMTPhVB9s4KzFPsHk0D7A",
+        "url": "/movie/4lMTPhVB9s4KzFPsHk0D7A",
+        "api_url": "/api/movie/4lMTPhVB9s4KzFPsHk0D7A",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "发财日记",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/27594653/"
+          }
+        ],
+        "title": "发财日记",
+        "brief": "故事讲述上世纪90年代初，穷小子小宝追随同村“发小儿”二哥，一路从贫穷朴实的东北农村来到了经济飞速发展的深圳。期间，两人无意中收留了一个嗷嗷待哺的婴儿，生活困窘的小宝和二哥该如何将孩子抚养长大？当小宝和二哥与同在深圳打拼的创业女青年马露“狭路相逢”，三人之间又将发生哪些令人捧腹的爆笑故事？一段笑泪参半、起伏跌宕的小人物奋斗史就此展开……",
+        "cover_image_url": "https://neodb.social/media/movie/2021/12/06e51442f7-5554-46a3-b044-c7b8a0674e4c.jpg",
+        "rating": 5.4,
+        "rating_count": 36
+      },
+      "created_time": "2023-06-09T05:36:19Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "4xn9H9ZdkDgWIYvhxqkHdh",
+        "url": "/movie/4xn9H9ZdkDgWIYvhxqkHdh",
+        "api_url": "/api/movie/4xn9H9ZdkDgWIYvhxqkHdh",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "胖子行动队",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/27149818/"
+          }
+        ],
+        "title": "胖子行动队",
+        "brief": "特工“J”（文章 饰）在执行一次A级任务时头部中枪，导致颅内下丘脑受损。养伤期间，J渐渐变成了一个三百斤的大胖子，并患有严重的嗜睡症，但J依然认为自己是一个王牌特工。终于，J再次接到任务，只身前往日本取回机密文件。文件得手后，J却擅自拆开文件决定替组织继续完成隐藏其中的任务，不料却晕倒在居酒屋。医院醒来的J结识了保安郝英俊（包贝尔 饰），郝英俊为了证明自己不是个一事无成的废物毅然决然地加入任务中。这对临时拍档在执行任务的过程中，经历一次又一次令人啼笑皆非、险象环生的危机......",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/164e3040e7-6518-4033-9957-ec42aee11539.jpg",
+        "rating": 3.7,
+        "rating_count": 32
+      },
+      "created_time": "2023-06-09T05:36:18Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "2bi7DlthVtOnUvAMHtc2x0",
+        "url": "/movie/2bi7DlthVtOnUvAMHtc2x0",
+        "api_url": "/api/movie/2bi7DlthVtOnUvAMHtc2x0",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "温暖的抱抱",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/34869362/"
+          }
+        ],
+        "title": "温暖的抱抱",
+        "brief": "对整洁和计划有着超乎常人执念的鲍抱（常远 饰），本以为自己是一个友情爱情的绝缘体，但在遇到个性率真宋温暖（李沁 饰）、妙手“神经”贾医生（沈腾 饰）和假仁假义王为仁（乔杉 饰）之后，上演了一段阴差阳错的喜剧故事……\n影片根据韩国电影《计划男》改编。",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/16ddee476c-bae5-48bb-ad23-b1d3c7da56de.jpg",
+        "rating": 4.5,
+        "rating_count": 92
+      },
+      "created_time": "2023-06-09T05:36:16Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "3rSV9Ku3Q64eNATr3qGq8o",
+        "url": "/movie/3rSV9Ku3Q64eNATr3qGq8o",
+        "api_url": "/api/movie/3rSV9Ku3Q64eNATr3qGq8o",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "反贪风暴4",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/27202819/"
+          }
+        ],
+        "title": "反贪风暴4",
+        "brief": "廉政公署收到报案人廖雨萍（周秀娜饰）的实名举报，举报正在坐牢的富二代曹元元（林峯饰）涉嫌行贿监狱里的监督沈济全（谭耀文饰）以及惩教员，首席调查主任陆志廉（古天乐饰）决定深入虎穴，卧底狱中。在监狱里，被陆志廉送入监狱的前警司黄文彬（林家栋饰）以及曹元元两大帮派势成水火，陆志廉趁机接近曹元元取得信任。同时监狱外的廉政公署总调查主任程德明（郑嘉颖饰）、国内反贪局行动处处长洪亮（丁海峰饰）也陆港联手，通力合作，最终成功破获贪腐行贿大案。",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/162d7763b1-9723-472a-8a53-099176698ddf.jpg",
+        "rating": 5.3,
+        "rating_count": 86
+      },
+      "created_time": "2023-06-09T05:36:15Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "7QI2v1czgCFIOsUdQyo8dK",
+        "url": "/movie/7QI2v1czgCFIOsUdQyo8dK",
+        "api_url": "/api/movie/7QI2v1czgCFIOsUdQyo8dK",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "紧急救援",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/26342391/"
+          }
+        ],
+        "title": "紧急救援",
+        "brief": "倾覆沉没的钻井平台，顺流直冲的运油车头，直坠入海的满载客机。交通海上应急反应特勤队队长高谦（彭于晏 饰）、机长方宇凌（辛芷蕾 饰）和绞车手赵呈（王彦霖 饰）一次次带领队伍第一时间抵达，站在水火咆哮的最前面，守在危急撤离的最后面，用生命对抗天灾人祸。但在自然面前，特勤员毕竟没有超能力，血肉之躯踩在死亡边缘，真实的恐惧无数次让这些斗士颤抖、无助和气馁。而海上救援的字典里没有“退缩”。当你听见旋翼的轰鸣、洪亮的汽笛、马达的飞驰，那是他们无惧艰难险阻，舍己为人，谱写的一曲英雄之歌。",
+        "cover_image_url": "https://neodb.social/media/movie/2021/09/16e5c122db-c599-4349-b8c2-7b127bc43665.jpg",
+        "rating": 5.3,
+        "rating_count": 71
+      },
+      "created_time": "2023-06-09T05:36:14Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    },
+    {
+      "shelf_type": "complete",
+      "visibility": 0,
+      "item": {
+        "uuid": "7OyVzaKvEmBTbaUuNaRq5p",
+        "url": "/movie/7OyVzaKvEmBTbaUuNaRq5p",
+        "api_url": "/api/movie/7OyVzaKvEmBTbaUuNaRq5p",
+        "category": "movie",
+        "parent_uuid": null,
+        "display_title": "长津湖之水门桥",
+        "external_resources": [
+          {
+            "url": "https://movie.douban.com/subject/35613853/"
+          }
+        ],
+        "title": "长津湖之水门桥",
+        "brief": "电影以抗美援朝战争第二次战役中的长津湖战役为背景，讲述了在结束了新兴里和下碣隅里的战斗之后，七连战士们又接到了更艰巨的任务……",
+        "cover_image_url": "https://neodb.social/media/movie/2021/11/1303b27571-c6a4-4d70-803a-dcb002e2ef82.webp",
+        "rating": 4.9,
+        "rating_count": 99
+      },
+      "created_time": "2023-06-09T05:36:13Z",
+      "comment_text": null,
+      "rating_grade": null,
+      "tags": []
+    }
+  ],
+  "pages": 2,
+  "count": 30
+}
