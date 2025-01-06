@@ -40,7 +40,7 @@ jobs:
       - name: Get NeoDB JSON and Count
         run: |
           curl -X 'GET' \
-          'https://neodb.social/api/me/shelf/complete?category=movie&page=1' \
+          'https://neodb.prvcy.page/api/me/shelf/complete?category=movie&page=1' \
           -H 'accept: application/json' \
           -H 'Authorization: Bearer ${{ secrets.NEODB_ACCESS_TOKEN }}' > movie1.json
           
@@ -80,7 +80,7 @@ jobs:
           
           # 循环下载文件，因为 page 1 已经下载过了，从 2 开始
           for ((i=1; i<=$pages; i++)); do
-            url="https://neodb.social/api/me/shelf/complete?category=movie&page=$i"
+            url="https://neodb.prvcy.page/api/me/shelf/complete?category=movie&page=$i"
             filename="movie$i.json"
           
           # 下载文件并保存为对应的文件名
