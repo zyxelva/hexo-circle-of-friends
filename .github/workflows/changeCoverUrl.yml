@@ -34,10 +34,15 @@ jobs:
 
       - name: Update cover_image_url in movies.json
         run: |
-          # 读取本地的 movies.json 文件内容
-          json=$(cat data/neodb/movies.json)
+          echo "当前目录："
+          pwd
+          echo "当前目录文件："
+          ls -a
           
-          movies=$(echo "$json" | jq -r '.data[]')
+          # 读取本地的 movies.json 文件内容
+#          json=$(cat data/neodb/movies.json)
+          
+          movies=$(jq -r '.data[]')
           for movie in $movies; do
             old_url=$(echo $movie | jq -r '.item.cover_image_url')
             new_url="${old_url//https:\/\/neodb.social/https:\/\/neodb.prvcy.page}" # 示例：替换 https://neodb.social 为 https://neodb.prvcy.page
