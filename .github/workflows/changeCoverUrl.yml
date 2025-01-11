@@ -45,7 +45,7 @@ jobs:
           jq --arg new_url "$new_url" '.item.cover_image_url = $new_url' <<< "$movie" > /tmp/temp_movie.json && mv /tmp/temp_movie.json <<< "$movie"
           done
           cp data/neodb/movies.json data/neodb/movies_updated.json
-          jq -c '.data[]' <(printf '%s\n' "$movies") > data/neodb/movies_updated.json
+          jq -c '.data' <(printf '%s\n' "$movies") > data/neodb/movies_updated.json
 
       # 把修改后的数据提交到 GitHub 仓库
       - name: Git Add and Commit
