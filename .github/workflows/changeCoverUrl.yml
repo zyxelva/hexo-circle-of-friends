@@ -32,6 +32,7 @@ jobs:
           # 把当前目录保存到环境变量中
           echo "WORK_DIR=$(pwd)" >> $GITHUB_ENV
 
+      #更新
       - name: Update cover_image_url in movies.json
         run: |
           echo "当前目录："
@@ -40,15 +41,15 @@ jobs:
           ls -a
           
           # 读取本地的 movies.json 文件内容
-#          json=$(cat data/neodb/movies.json)
-          
+          #json=$(cat data/neodb/movies.json)
+                         
           movies=$(jq -r '.data[]')
           for movie in $movies; do
-            old_url=$(echo $movie | jq -r '.item.cover_image_url')
-            new_url="${old_url//https:\/\/neodb.social/https:\/\/neodb.prvcy.page}" # 示例：替换 https://neodb.social 为 https://neodb.prvcy.page
-            echo "Old cover_image_url: $old_url"
-            echo "New cover_image_url: $new_url"
-            jq --arg new_url "$new_url" '.item.cover_image_url = $new_url' <<< "$movie" > /tmp/temp_movie.json && mv /tmp/temp_movie.json <<< "$movie"
+          old_url=$(echo $movie | jq -r '.item.cover_image_url')
+          new_url="${old_url//https:\/\/neodb.social/https:\/\/neodb.prvcy.page}" # 示例：替换 https://neodb.social 为 https://neodb.prvcy.page
+          echo "Old cover_image_url: $old_url"
+          echo "New cover_image_url: $new_url"
+          jq --arg new_url "$new_url" '.item.cover_image_url = $new_url' <<< "$movie" > /tmp/temp_movie.json && mv /tmp/temp_movie.json <<< "$movie"
           done
           cp data/neodb/movies.json data/neodb/movies_updated.json
           jq -c '.data[]' <(printf '%s\n' "$movies") > data/neodb/movies_updated.json
