@@ -32,19 +32,11 @@ jobs:
           # 把当前目录保存到环境变量中
           echo "WORK_DIR=$(pwd)" >> $GITHUB_ENV
 
-      - name: Debug - Print JSON file content
-        run: |
-          cat data/neodb/movies.json
-
-      - name: Validate JSON format
-        run: |
-          jq empty data/neodb/movies.json
-
       #更新
       - name: Update cover_image_url in movies.json
         run: |
           # 读取本地的 movies.json 文件内容
-          movies=$(jq -c '.data[]' ${{ env.WORK_DIR }}/data/neodb/movies.json)
+          movies=$(jq -c '.data[]' data/neodb/movies.json)
           for movie in $movies; do
           old_url=$(echo $movie | jq -r '.item.cover_image_url')
           new_url="${old_url//https:\/\/neodb.social/https:\/\/neodb.prvcy.page}" # 示例：替换 https://neodb.social 为 https://neodb.prvcy.page
