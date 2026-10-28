@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # 检查是否安装了 JQ
+      # 检查是否安装了 JQ，并记录工作目录
       - name: Check JQ
         run: |
           if ! command -v jq &> /dev/null; then
@@ -26,110 +26,116 @@ jobs:
           else
             echo "jq is already installed."
           fi
-          # 把当前目录保存到环境变量中
           echo "WORK_DIR=$(pwd)" >> $GITHUB_ENV
 
       # 获取本地现有文件的标记数
       - name: Get Current Count
         run: |
-          CURRENT_COUNT() {
-            jq '.count' data/neodb/books.json
-          }
-          echo "CURRENT_COUNT=$(CURRENT_COUNT)" >> $GITHUB_ENV
+          if [ -f data/neodb/books.json ] && jq empty data/neodb/books.json >/dev/null 2>&1; then
+            CURRENT_COUNT=$(jq -r '.count // 0' data/neodb/books.json)
+          else
+            CURRENT_COUNT=0
+          fi
+          echo "CURRENT_COUNT=$CURRENT_COUNT" >> $GITHUB_ENV
+          echo "本地标记数：$CURRENT_COUNT"
 
+      # 下载第一页并校验 JSON
       - name: Get NeoDB JSON and Count
         run: |
-          curl -X 'GET' \
-          'https://neodb.prvcy.page/api/me/shelf/complete?category=book&page=1' \
-          -H 'accept: application/json' \
-          -H 'Authorization: Bearer ${{ secrets.NEODB_ACCESS_TOKEN }}' > book1.json
-          
-          # 获取 NeoDB 上的标记数
-          REMOTE_COUNT() {
-            jq '.count' book1.json
-          }
-          echo "REMOTE_COUNT=$(REMOTE_COUNT)" >> $GITHUB_ENV
+          set -e
+          curl -sS -X 'GET' \
+            'https://neodb.prvcy.page/api/me/shelf/complete?category=book&page=1' \
+            -H 'accept: application/json' \
+            -H 'Authorization: Bearer ${{ secrets.NEODB_ACCESS_TOKEN }}' \
+            -o book1.json
 
-      # 对比本地的标记数和远程标记数，相等就跳过，不相等就下载新数据
+          if ! jq empty book1.json >/dev/null 2>&1; then
+            echo "::error::NeoDB API 返回的不是合法 JSON，实际内容如下："
+            echo "----- book1.json 开头 -----"
+            head -c 2000 book1.json
+            echo ""
+            echo "----- book1.json 结尾 -----"
+            exit 1
+          fi
+
+          REMOTE_COUNT=$(jq -r '.count' book1.json)
+          echo "REMOTE_COUNT=$REMOTE_COUNT" >> $GITHUB_ENV
+          echo "远程标记数：$REMOTE_COUNT"
+
+      # 对比本地和远程标记数，用 should_sync 控制后续步骤
       - name: Count Compare
         run: |
           if [ "${{ env.REMOTE_COUNT }}" = "${{ env.CURRENT_COUNT }}" ]; then
-            echo "Variables are equal. Skipping the next steps."
-            exit 0
+            echo "should_sync=false" >> $GITHUB_ENV
+            echo "标记数一致，跳过后续同步。"
           else
-            echo "Variables are not equal. Running the next steps."
+            echo "should_sync=true" >> $GITHUB_ENV
+            echo "标记数不一致，开始同步。"
           fi
 
       # 下载所有数据
       - name: Get All NeoDB Count
-        if: ${{ env.REMOTE_COUNT != env.CURRENT_COUNT }}
+        if: env.should_sync == 'true'
         run: |
-          echo "当前目录："
-          pwd
-          echo "当前目录文件："
-          ls -alh
-          echo "========================"
-          #从 book1.json 中提取 pages 字段的值
-          pages=$(jq '.pages' book1.json)
-          
-          # 个人使用，新建 WorkDIR ，排除 vercel.json 和 package.json 等
-          mkdir neodb
+          set -e
+          pages=$(jq -r '.pages' book1.json)
+          if [ -z "$pages" ] || [ "$pages" = "null" ]; then
+            echo "::error::无法从 book1.json 中读取 pages 字段"
+            cat book1.json
+            exit 1
+          fi
+          echo "共 $pages 页"
+
+          mkdir -p neodb
           cd neodb
-          echo "当前目录2："
-          pwd
-          
-          # 循环下载文件，因为 page 1 已经下载过了，从 2 开始
+
           for ((i=1; i<=$pages; i++)); do
             url="https://neodb.prvcy.page/api/me/shelf/complete?category=book&page=$i"
             filename="book$i.json"
-          
-          # 下载文件并保存为对应的文件名
-          curl -X 'GET' "$url" \
-            -H 'accept: application/json' \
-            -H 'Authorization: Bearer ${{ secrets.NEODB_ACCESS_TOKEN }}' > "$filename"
-          done
-          
-          # 把所有数据合并成一个文件
-          jq -c -s '{data: map(.data[]) | unique | sort_by(.created_time) | reverse, pages: map(.pages)[0], count: map(.count)[0]}' *.json > books.json
-          
-          # 更新 NeoDB 数据
-          echo "当前目录："
-          pwd
-          echo "当前目录文件："
-          ls -a
-          cp -f books.json ${{ env.WORK_DIR }}/data/neodb/
 
+            curl -sS -X 'GET' "$url" \
+              -H 'accept: application/json' \
+              -H 'Authorization: Bearer ${{ secrets.NEODB_ACCESS_TOKEN }}' \
+              -o "$filename"
+
+            if ! jq empty "$filename" >/dev/null 2>&1; then
+              echo "::error::下载 $filename 失败，返回内容不是 JSON："
+              cat "$filename"
+              exit 1
+            fi
+            echo "已下载 $filename"
+          done
+
+          # 合并所有页
+          jq -c -s '{data: map(.data[]) | unique | sort_by(.created_time) | reverse, pages: map(.pages)[0], count: map(.count)[0]}' *.json > books.json
+
+          cp -f books.json "${{ env.WORK_DIR }}/data/neodb/books.json"
+          echo "已更新 data/neodb/books.json"
+
+      # 下载封面
       - name: Download NeoDB Cover
+        if: env.should_sync == 'true'
         run: |
-          # 检查 book 目录是否存在，如果不存在则创建
-          if [ ! -d "book" ]; then
-            mkdir book
-          fi
-          
-          # 读取本地的 books.json 文件内容
-          json=$(cat data/neodb/books.json)
-          
-          # 提取图片 URL
-          image_urls=$(echo "$json" | jq -r '.data[].item.cover_image_url')
-          
-          # 遍历图片 URL 并下载图片
+          set -e
+          mkdir -p data/neodb/cover
+
+          image_urls=$(jq -r '.data[].item.cover_image_url // empty' data/neodb/books.json)
+
           for url in $image_urls; do
+            [ -z "$url" ] && continue
             filename=$(basename "$url")
             filepath="data/neodb/cover/$filename"
-            # 检查文件是否已存在
             if [ -f "$filepath" ]; then
               echo "Skipping $filename - File already exists"
             else
-              # 使用 curl 命令下载图片
-              curl -o "$filepath" "$url"
+              curl -sS -o "$filepath" "$url" || echo "Failed to download $url"
               echo "Downloaded $filename"
-              echo "REMOTE_COUNT=''" >> $GITHUB_ENV
             fi
           done
 
       # 把修改后的数据提交到 GitHub 仓库
       - name: Git Add and Commit
-        if: ${{ env.REMOTE_COUNT != env.CURRENT_COUNT }}
+        if: env.should_sync == 'true'
         uses: EndBug/add-and-commit@v9
         with:
           message: 'chore(data): update neodb book data'
